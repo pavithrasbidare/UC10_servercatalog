@@ -6,17 +6,17 @@ variable "portfolio_name" {
   description = "The name of the Service Catalog portfolio"
 }
 
-/*variable "portfolio_description" {
+variable "portfolio_description" {
   description = "The description of the Service Catalog portfolio"
-}*/
+}
 
 variable "provider_name" {
   description = "The name of the provider"
 }
 
-/*variable "distributor_name" {
+variable "distributor_name" {
   description = "The name of the distributor"
-}*/
+}
 
 variable "support_email" {
   description = "The support email for the products"
