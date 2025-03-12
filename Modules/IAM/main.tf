@@ -54,9 +54,9 @@ resource "aws_iam_policy" "ec2_servicecatalog_policy" {
             "Effect": "Allow",
             "Action": [
                 "resource-groups:CreateGroup",
-                "resource-groups:ListGroupResources",
+               roups:ListGroupResources",
                 "resource-groups:DeleteGroup",
-               roups:Tag",
+                "resource-groups:Tag",
                 "resource-groups:Untag"
             ],
             "Resource": "*"
