@@ -13,6 +13,6 @@ products = [
     product_owner       = "IT"
     product_description = "Simple S3 bucket"
     artifact_version    = "v1.0"
-    template_url        = "https://service-catalog-terraform.s3.us-west-2.amazonaws.com/server-catalog.tf.gz"
+    template_url        = "https://service-catalog-terraform.s3.us-west-2.amazonaws.com/webapp1.tar.gz"
   }
 ]
