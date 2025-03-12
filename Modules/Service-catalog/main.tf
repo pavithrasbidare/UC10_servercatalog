@@ -12,12 +12,11 @@ resource "aws_servicecatalog_product" "products" {
   distributor   = var.distributor_name
   support_email = var.support_email
   support_url   = var.support_url
-  product_type  = "EXTERNAL"
+  type          = "EXTERNAL"  # Set the type to "EXTERNAL"
 
   provisioning_artifact_parameters {
     name                         = var.products[count.index].artifact_version
     description                  = "Initial version"
-    type                         = "EXTERNAL"
     template_url                 = var.products[count.index].template_url
     disable_template_validation  = true
   }
