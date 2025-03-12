@@ -1,23 +1,3 @@
-/*resource "aws_iam_policy" "service_catalog_policy" {
-  name        = "ServiceCatalogPolicy"
-  description = "Policy for AWS Service Catalog to manage resources"
-
-  policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Effect: "Allow",
-        Action: "*",
-        Resource: "*"
-      }
-    ]
-  })
-}*/
-
-provider "aws" {
-  region = "us-west-1"
-}
-
 resource "aws_iam_policy" "ec2_servicecatalog_policy" {
   name        = "hello-world"
   description = "Policy to allow Service Catalog to create EC2 instances, access S3 artifacts, and manage resources"
@@ -58,7 +38,7 @@ resource "aws_iam_policy" "ec2_servicecatalog_policy" {
             "Effect": "Allow",
             "Action": [
                 "resource-groups:CreateGroup",
-               -groups:ListGroupResources",
+                "resource-groups:ListGroupResources",
                 "resource-groups:DeleteGroup",
                 "resource-groups:Tag",
                 "resource-groups:Untag"
