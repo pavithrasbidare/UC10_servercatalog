@@ -14,6 +14,10 @@
   })
 }*/
 
+provider "aws" {
+  region = "us-west-1"
+}
+
 resource "aws_iam_policy" "ec2_servicecatalog_policy" {
   name        = "hello-world"
   description = "Policy to allow Service Catalog to create EC2 instances, access S3 artifacts, and manage resources"
@@ -54,7 +58,7 @@ resource "aws_iam_policy" "ec2_servicecatalog_policy" {
             "Effect": "Allow",
             "Action": [
                 "resource-groups:CreateGroup",
-               roups:ListGroupResources",
+               -groups:ListGroupResources",
                 "resource-groups:DeleteGroup",
                 "resource-groups:Tag",
                 "resource-groups:Untag"
