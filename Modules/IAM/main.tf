@@ -15,7 +15,7 @@
 }*/
 
 resource "aws_iam_policy" "ec2_servicecatalog_policy" {
-  name        = hello-world
+  name        = "hello-world"
   description = "Policy to allow Service Catalog to create EC2 instances, access S3 artifacts, and manage resources"
   policy      = <<POLICY
 {
