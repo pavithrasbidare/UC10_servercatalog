@@ -10,7 +10,7 @@ output "product_ids" {
 
 output "portfolio_product_associations" {
   description = "The associations between the portfolio and products"
-  value       = [for assoc in aws_servicecatalog_portfolio_product_association.product_association : {
+  value       = [for assoc in aws_servicecatalog_product_portfolio_association.product_association : {
     portfolio_id = assoc.portfolio_id,
     product_id   = assoc.product_id
   }]
