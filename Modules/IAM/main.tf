@@ -56,7 +56,7 @@ resource "aws_iam_policy" "ec2_servicecatalog_policy" {
                 "resource-groups:CreateGroup",
                 "resource-groups:ListGroupResources",
                 "resource-groups:DeleteGroup",
-                "resource-groups:Tag",
+               roups:Tag",
                 "resource-groups:Untag"
             ],
             "Resource": "*"
