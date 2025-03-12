@@ -18,7 +18,7 @@ resource "aws_iam_role" "launch_role" {
   name = "SCLaunch-HelloWorld"
   assume_role_policy = jsonencode({
     Version = "2012-10-17",
-    Statement: [
+    Statement = [
       {
         Effect: "Allow",
         Principal: {
