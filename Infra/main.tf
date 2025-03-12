@@ -1,11 +1,11 @@
 module "iam" {
-  source = "../IAM"
+  source = "../Modules/IAM"
 
   account_id = var.account_id
 }
 
 module "service_catalog" {
-  source = "../Service-catalog"
+  source = "../Modules/Service-catalog"
 
   portfolio_name        = var.portfolio_name
   portfolio_description = var.portfolio_description
