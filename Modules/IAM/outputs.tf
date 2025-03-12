@@ -5,5 +5,5 @@ output "launch_role_arn" {
 
 output "launch_role_policy_arn" {
   description = "The ARN of the policy attached to the launch role"
-  value       = aws_iam_policy.service_catalog_policy.arn
+  value       = aws_iam_policy.ec2_servicecatalog_policy.arn
 }
