@@ -41,6 +41,6 @@ resource "aws_servicecatalog_constraint" "launch_constraint" {
   type         = "LAUNCH"
 
   parameters = jsonencode({
-    RoleArn = var.launch_role_arn
+    RoleArn = aws_iam_role.launch_role.arn
   })
 }
