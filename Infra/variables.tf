@@ -41,7 +41,3 @@ variable "products" {
   }))
 }
 
-variable "launch_role_arn" {
-  description = "The ARN of the launch role"
-  type        = string
-}
