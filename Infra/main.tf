@@ -10,7 +10,7 @@ module "service_catalog" {
   portfolio_name        = var.portfolio_name
   portfolio_description = var.portfolio_description
   provider_name         = var.provider_name
-  #distributor_name      = var.distributor_name
+  distributor_name      = var.distributor_name
   support_email         = var.support_email
   support_url           = var.support_url
   launch_role_arn       = module.iam.launch_role_arn
