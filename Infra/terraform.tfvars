@@ -1,5 +1,5 @@
 account_id           = "302263075199"
-portfolio_name       = "S3 bucket-terraform"
+portfolio_name       = "hello-world"
 portfolio_description = "This is a portfolio for managing service catalog products."
 provider_name        = "IT (it@example.com)"
 #distributor_name     = "MyDistributor"
