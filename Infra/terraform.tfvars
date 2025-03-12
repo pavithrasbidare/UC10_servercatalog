@@ -11,7 +11,7 @@ products = [
   {
     product_name        = "Simple S3 bucket terraform"
     product_owner       = "IT"
-    #product_description = "Simple S3 bucket"
+    product_description = "Simple S3 bucket"
     artifact_version    = "v1.0"
     template_url        = "https://github.com/noelarz/helloworld/blob/main/webapp1.tar.gz"
   }
