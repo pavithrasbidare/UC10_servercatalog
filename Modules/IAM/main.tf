@@ -65,16 +65,35 @@ POLICY
 resource "aws_iam_role" "launch_role" {
   name = "SCLaunch-HelloWorld"
   assume_role_policy = jsonencode({
-    Version = "2012-10-17",
-    Statement = [
-      {
-        Effect: "Allow",
-        Principal: {
-          Service: "servicecatalog.amazonaws.com"
+    {
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "GivePermissionsToServiceCatalog",
+            "Effect": "Allow",
+            "Principal": {
+                "Service": "servicecatalog.amazonaws.com"
+            },
+            "Action": "sts:AssumeRole"
         },
-        Action: "sts:AssumeRole"
-      }
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "AWS": "arn:aws:iam::302263075199:root"
+            },
+            "Action": "sts:AssumeRole",
+            "Condition": {
+                "StringLike": {
+                    "aws:PrincipalArn": [
+                        "arn:aws:iam::302263075199:role/TerraformEngine/TerraformExecutionRole*",
+                        "arn:aws:iam::302263075199:role/TerraformEngine/ServiceCatalogExternalParameterParserRole*",
+                        "arn:aws:iam::302263075199:role/TerraformEngine/ServiceCatalogTerraformOSParameterParserRole*"
+                    ]
+                }
+            }
+        }
     ]
+}
   })
 }
 
