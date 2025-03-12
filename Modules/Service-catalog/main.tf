@@ -17,7 +17,7 @@ resource "aws_servicecatalog_product" "products" {
   provisioning_artifact_parameters {
     name                         = var.products[count.index].artifact_version
     description                  = "Initial version"
-    type                         = "EXTERNAL"  # Ensure this is set to EXTERNAL
+    type                         = "EXTERNAL"
     template_url                 = var.products[count.index].template_url
     disable_template_validation  = true
   }
