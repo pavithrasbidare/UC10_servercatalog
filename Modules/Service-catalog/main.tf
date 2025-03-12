@@ -23,7 +23,7 @@ resource "aws_servicecatalog_product" "products" {
   }
 }
 
-resource "aws_servicecatalog_portfolio_product_association" "product_association" {
+resource "aws_servicecatalog_product_portfolio_association" "product_association" {
   count        = length(var.products)
   portfolio_id = aws_servicecatalog_portfolio.portfolio.id
   product_id   = aws_servicecatalog_product.products[count.index].id
