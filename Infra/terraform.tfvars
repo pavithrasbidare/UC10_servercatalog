@@ -13,6 +13,6 @@ products = [
     product_owner       = "IT"
     #product_description = "Simple S3 bucket"
     artifact_version    = "v1.0"
-    template_url        = "https://s3.amazonaws.com/mybucket/product1-template.json"
+    template_url        = "https://github.com/noelarz/helloworld/blob/main/webapp1.tar.gz"
   }
 ]
