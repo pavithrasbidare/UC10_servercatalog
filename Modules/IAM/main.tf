@@ -29,8 +29,3 @@ resource "aws_iam_role" "launch_role" {
     ]
   })
 }
-
-resource "aws_iam_role_policy_attachment" "launch_role_policy_attachment" {
-  role       = aws_iam_role.launch_role.name
-  policy_arn = aws_iam_policy.service_catalog_policy.arn
-}
