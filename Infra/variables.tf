@@ -35,7 +35,7 @@ variable "products" {
   type = list(object({
     product_name       : string,
     product_owner      : string,
-    #product_description: string,
+    product_description: string,
     artifact_version   : string,
     template_url       : string,
   }))
