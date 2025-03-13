@@ -9,7 +9,7 @@ iam_group_arn        = "arn:aws:iam::302263075199:group/Endusers"
 
 products = [
   {
-    product_name        = "Simple S3 bucket terraform"
+    product_name        = "Webapp"
     product_owner       = "IT"
     product_description = "Simple S3 bucket"
     artifact_version    = "v1.0"
